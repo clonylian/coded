@@ -156,14 +156,12 @@
       <div class="allcards">
         <div class="allccon">
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute zoreimgbox"
             draggable="false"
-            style="
-              top: -7.9%;
-              left: -5.2793%;
-              z-index: 1;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[0].elementRef = el;
+              }
             "
             v-if="elements[0].isVisible"
             @mousedown="startDrag($event, 0)"
@@ -236,14 +234,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute oneimbox"
             draggable="false"
-            style="
-              top: 36.0669%;
-              left: 40.894%;
-              z-index: 6;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[1].elementRef = el;
+              }
             "
             v-if="elements[1].isVisible"
             @mousedown="startDrag($event, 1)"
@@ -297,14 +293,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute twoimgbox"
             draggable="false"
-            style="
-              top: 33.8594%;
-              left: 62.4191%;
-              z-index: 6;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[2].elementRef = el;
+              }
             "
             v-if="elements[2].isVisible"
             @mousedown="startDrag($event, 2)"
@@ -358,14 +352,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute threeimgbox"
             draggable="false"
-            style="
-              top: 58.2427%;
-              left: 32.6215%;
-              z-index: 10;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[4].elementRef = el;
+              }
             "
             v-if="elements[4].isVisible"
             @mousedown="startDrag($event, 4)"
@@ -419,14 +411,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute fourimgbox"
             draggable="false"
-            style="
-              top: 30.0931%;
-              left: 44.45%;
-              z-index: 3;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[3].elementRef = el;
+              }
             "
             v-if="elements[3].isVisible"
             @mousedown="startDrag($event, 3)"
@@ -480,14 +470,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute fiveimgbox"
             draggable="false"
-            style="
-              top: 41.8918%;
-              left: 35.7285%;
-              z-index: 11;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[5].elementRef = el;
+              }
             "
             v-if="elements[5].isVisible"
             @mousedown="startDrag($event, 5)"
@@ -543,14 +531,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute siximgbox"
             draggable="false"
-            style="
-              top: -12.9358%;
-              left: 56.5215%;
-              z-index: 14;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[6].elementRef = el;
+              }
             "
             v-if="elements[6].isVisible"
             @mousedown="startDrag($event, 6)"
@@ -610,14 +596,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute sevenimgbox"
             draggable="false"
-            style="
-              top: 43.0593%;
-              left: 38.9781%;
-              z-index: 16;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[7].elementRef = el;
+              }
             "
             v-if="elements[7].isVisible"
             @mousedown="startDrag($event, 7)"
@@ -687,14 +671,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute eightimgbox"
             draggable="false"
-            style="
-              top: -13.2423%;
-              left: 19.3694%;
-              z-index: 22;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[8].elementRef = el;
+              }
             "
             v-if="elements[8].isVisible"
             @mousedown="startDrag($event, 8)"
@@ -764,14 +746,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute nineimgbox"
             draggable="false"
-            style="
-              top: 7.5967%;
-              left: 9.6042%;
-              z-index: 29;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[9].elementRef = el;
+              }
             "
             v-if="elements[9].isVisible"
             @mousedown="startDrag($event, 9)"
@@ -841,16 +821,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute tenimgbox"
             draggable="false"
-            style="
-              top: -2.7541%;
-              left: 76.6353%;
-              z-index: 35;
-              transform: translateX(-1390.4px) translateY(-405.313px)
-                rotate(-14.5583deg);
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[10].elementRef = el;
+              }
             "
             v-if="elements[10].isVisible"
             @mousedown="startDrag($event, 10)"
@@ -937,14 +913,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute elevenimgbox"
             draggable="false"
-            style="
-              top: 46.7679%;
-              left: 1.6667%;
-              z-index: 43;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[11].elementRef = el;
+              }
             "
             v-if="elements[11].isVisible"
             @mousedown="startDrag($event, 11)"
@@ -1015,14 +989,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute twelveimgbox"
             draggable="false"
-            style="
-              top: 47.7026%;
-              left: 58.739%;
-              z-index: 48;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[12].elementRef = el;
+              }
             "
             v-if="elements[12].isVisible"
             @mousedown="startDrag($event, 12)"
@@ -1091,14 +1063,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute thirteenimgbox"
             draggable="false"
-            style="
-              top: -20.9514%;
-              left: 33.1637%;
-              z-index: 56;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[13].elementRef = el;
+              }
             "
             v-if="elements[13].isVisible"
             @mousedown="startDrag($event, 13)"
@@ -1168,14 +1138,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute fourteen"
             draggable="false"
-            style="
-              top: 9.0486%;
-              left: 80.1637%;
-              z-index: 56;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[14].elementRef = el;
+              }
             "
             v-if="elements[14].isVisible"
             @mousedown="startDrag($event, 14)"
@@ -1245,14 +1213,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute fifteen"
             draggable="false"
-            style="
-              top: 5.8918%;
-              left: 50.7285%;
-              z-index: 11;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[15].elementRef = el;
+              }
             "
             v-if="elements[15].isVisible"
             @mousedown="startDrag($event, 15)"
@@ -1308,14 +1274,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute sixteen"
             draggable="false"
-            style="
-              top: 20.8918%;
-              left: 52.7285%;
-              z-index: 11;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[16].elementRef = el;
+              }
             "
             v-if="elements[16].isVisible"
             @mousedown="startDrag($event, 16)"
@@ -1371,14 +1335,12 @@
             </div>
           </div>
           <div
-            class="drag-elements absolute"
+            class="drag-elements absolute seventeenimgbox"
             draggable="false"
-            style="
-              top: 32.8828%;
-              left: 16.5079%;
-              z-index: 60;
-              user-select: none;
-              touch-action: none;
+            :ref="
+              (el) => {
+                elements[17].elementRef = el;
+              }
             "
             v-if="elements[17].isVisible"
             @mousedown="startDrag($event, 17)"
@@ -1457,6 +1419,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
 
+let zindex = ref(3);
+
 const elements = ref([
   {
     posX: 0,
@@ -1470,6 +1434,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1483,6 +1448,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1496,6 +1462,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1509,6 +1476,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1522,6 +1490,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1535,6 +1504,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1548,6 +1518,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1561,6 +1532,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1574,6 +1546,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1587,6 +1560,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1600,6 +1574,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1613,6 +1588,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1626,6 +1602,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1639,6 +1616,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1652,6 +1630,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1665,6 +1644,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1678,6 +1658,7 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
   {
     posX: 0,
@@ -1691,16 +1672,19 @@ const elements = ref([
     lastMouseY: 0,
     velocityX: 0,
     velocityY: 0,
+    elementRef: null,
   },
 ]);
 
 const startDrag = (e, index) => {
   if (e.button !== 0) return;
 
+  zindex.value = ++zindex.value;
+
   const element = elements.value[index];
   element.isDragging = true;
   element.isThrowing = false;
-
+  element.elementRef.style.zIndex = zindex.value;
   element.offsetX = e.clientX - element.posX;
   element.offsetY = e.clientY - element.posY;
   element.lastMouseX = e.clientX;
@@ -2072,16 +2056,147 @@ onUnmounted(() => {
   height: fit-content;
 }
 
-#draggable {
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  position: absolute;
-  top: 22.481%;
-  left: 3.4684%;
-  z-index: 100;
-  cursor: move;
+.zoreimgbox {
+  top: -7.9%;
+  left: -5.2793%;
   user-select: none;
-  will-change: transform; /* 优化 transform 性能 */
+  touch-action: none;
+  z-index: 0;
+}
+
+.oneimbox {
+  top: 36.0669%;
+  left: 40.894%;
+  z-index: 1;
+  user-select: none;
+  touch-action: none;
+}
+
+.twoimgbox {
+  top: 33.8594%;
+  left: 62.4191%;
+  z-index: 0;
+  user-select: none;
+  touch-action: none;
+}
+
+.threeimgbox {
+  top: 58.2427%;
+  left: 32.6215%;
+  z-index: 0;
+  user-select: none;
+  touch-action: none;
+}
+
+.fourimgbox {
+  top: 30.0931%;
+  left: 44.45%;
+  z-index: 0;
+  user-select: none;
+  touch-action: none;
+}
+
+.fiveimgbox {
+  top: 41.8918%;
+  left: 35.7285%;
+  z-index: 1;
+  user-select: none;
+  touch-action: none;
+}
+
+.siximgbox {
+  top: -12.9358%;
+  left: 56.5215%;
+  z-index: 0;
+  user-select: none;
+  touch-action: none;
+}
+
+.sevenimgbox {
+  top: 43.0593%;
+  left: 38.9781%;
+  z-index: 1;
+  user-select: none;
+  touch-action: none;
+}
+
+.eightimgbox {
+  top: -13.2423%;
+  left: 19.3694%;
+  z-index: 0;
+  user-select: none;
+  touch-action: none;
+}
+
+.nineimgbox {
+  top: 7.5967%;
+  left: 9.6042%;
+  z-index: 0;
+  user-select: none;
+  touch-action: none;
+}
+
+.tenimgbox {
+  top: -2.7541%;
+  left: 76.6353%;
+  z-index: 1;
+  user-select: none;
+  touch-action: none;
+}
+
+.elevenimgbox {
+  top: 46.7679%;
+  left: 1.6667%;
+  z-index: 1;
+  user-select: none;
+  touch-action: none;
+}
+
+.twelveimgbox {
+  top: 47.7026%;
+  left: 58.739%;
+  z-index: 1;
+  user-select: none;
+  touch-action: none;
+}
+
+.thirteenimgbox {
+  top: -20.9514%;
+  left: 33.1637%;
+  z-index: 1;
+  user-select: none;
+  touch-action: none;
+}
+
+.fourteen {
+  top: 9.0486%;
+  left: 80.1637%;
+  z-index: 0;
+  user-select: none;
+  touch-action: none;
+}
+
+.fifteen {
+  top: 5.8918%;
+  left: 50.7285%;
+  z-index: 1;
+  user-select: none;
+  touch-action: none;
+}
+
+.sixteen {
+  top: 20.8918%;
+  left: 52.7285%;
+  z-index: 0;
+  user-select: none;
+  touch-action: none;
+}
+
+.seventeenimgbox {
+  top: 32.8828%;
+  left: 16.5079%;
+  z-index: 0;
+  user-select: none;
+  touch-action: none;
 }
 </style>
